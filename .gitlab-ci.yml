@@ -1,0 +1,41 @@
+# Disable the Gradle daemon for Continuous Integration servers as correctness
+# is usually a priority over speed in CI environments. Using a fresh
+# runtime for each build is more reliable since the runtime is completely
+# isolated from any previous builds.
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+  DOCKER_IMAGE: "marro-news-backend:latest"
+  DATABASE_CONTAINER_NAME: "sql1"
+  BACKEND_CONTAINER_NAME: "marronews-containe"
+
+stages:
+  - build
+  - test
+  - sonarqube
+  - deploy
+
+before_script:
+  - ./gradlew assemble
+
+build:
+  stage: build
+  script:
+    - ./gradlew assemble
+
+test:
+  stage: test
+  script:
+    - ./gradlew test
+
+sonarqube:
+  stage: sonarqube
+  script:
+    - ./gradlew sonar
+
+deploy:
+  stage: deploy
+  script:
+    - docker start $DATABASE_CONTAINER_NAME
+    - docker build -t marro-news-backend . # Build Docker Image for Backend Application
+    - docker start $BACKEND_CONTAINER_NAME
+
