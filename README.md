@@ -30,7 +30,7 @@ The backend follows a layered architecture using Spring Boot, with clear separat
 
 **C3 Context Diagram:**
 
-![C3 Software Architecture](C3.png)
+![C3 Software Architecture](docs/C3.png)
 
 ---
 
@@ -93,6 +93,34 @@ build.gradle            # Gradle build file
 Dockerfile              # Docker containerization
 README.md               # Project documentation
 ```
+
+---
+
+## Documentation
+
+This repository includes additional system and project documentation to support understanding of the architecture, design decisions, and quality assurance processes.
+
+All documentation is stored in the `docs/` folder:
+
+- **C3 diagram**: system-level architecture overview  
+  [View C3 diagram](docs/C3.png)
+
+- **UML class diagram**: structural representation of domain models and relationships  
+  [View UML diagram](docs/uml-class-diagram-news.pdf)
+
+- **Design document (C4 + architecture decisions)**: system design using C4 diagrams, key architectural decisions, and technology stack choices  
+  [View design document](docs/design-document.pdf)
+
+- **Security report (OWASP Top 10)**: security analysis mapped against OWASP Top 10 risks, including mitigations and findings  
+  [View security report](docs/security-report.pdf)
+
+- **SonarQube report**: code quality, maintainability, and static analysis results  
+  [View SonarQube report](docs/sonarqube-report.pdf)
+
+- **UX report**: user experience analysis and design considerations  
+  [View UX report](docs/ux-report.pdf)
+
+These documents provide additional context for reviewers and are intended to complement the implementation by illustrating design reasoning, system structure, security considerations, and engineering quality practices.
 
 ---
 
