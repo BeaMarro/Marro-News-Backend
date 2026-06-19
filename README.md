@@ -106,19 +106,19 @@ All documentation is stored in the `docs/` folder:
   [View C3 diagram](docs/C3.png)
 
 - **UML class diagram**: structural representation of domain models and relationships  
-  [View UML diagram](docs/uml-class-diagram-news.pdf)
+  [View UML diagram](docs/uml_class_diagram_news.pdf)
 
 - **Design document (C4 + architecture decisions)**: system design using C4 diagrams, key architectural decisions, and technology stack choices  
-  [View design document](docs/design-document.pdf)
+  [View design document](docs/design_document.pdf)
 
 - **Security report (OWASP Top 10)**: security analysis mapped against OWASP Top 10 risks, including mitigations and findings  
-  [View security report](docs/security-report.pdf)
+  [View security report](docs/security_report.pdf)
 
 - **SonarQube report**: code quality, maintainability, and static analysis results  
-  [View SonarQube report](docs/sonarqube-report.pdf)
+  [View SonarQube report](docs/sonarqube_report.pdf)
 
 - **UX report**: user experience analysis and design considerations  
-  [View UX report](docs/ux-report.pdf)
+  [View UX report](docs/ux_report.pdf)
 
 These documents provide additional context for reviewers and are intended to complement the implementation by illustrating design reasoning, system structure, security considerations, and engineering quality practices.
 
