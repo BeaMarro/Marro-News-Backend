@@ -115,7 +115,7 @@ All documentation is stored in the `docs/` folder:
   [View security report](docs/security_report.pdf)
 
 - **SonarQube report**: code quality, maintainability, and static analysis results  
-  [View SonarQube report](docs/sonarqube_report.pdf)
+  [View SonarQube report](docs/sonarqube_screenshots.pdf)
 
 - **UX report**: user experience analysis and design considerations  
   [View UX report](docs/ux_report.pdf)
